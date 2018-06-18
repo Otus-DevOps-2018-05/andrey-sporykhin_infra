@@ -12,3 +12,4 @@ Host gcp-instance-1
 #
 bastion_IP = 35.207.10.210
 someinternalhost_IP = 10.142.0.3
+ 
