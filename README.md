@@ -15,3 +15,8 @@ someinternalhost_IP = 10.142.0.3
 #  
 testapp_IP = 35.228.250.243  
 testapp_port = 9292  
+#  
+gcloud compute firewall-rules create default-puma-server \
+ --allow=tcp:9292 \
+ --direction INGRESS \
+ --target-tags=puma-server
