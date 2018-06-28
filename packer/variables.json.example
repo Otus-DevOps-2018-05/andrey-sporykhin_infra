@@ -1,0 +1,5 @@
+{
+    "project_id": "some-project-123456",
+    "source_image_family": "any-image",
+    "machine_type": "any-machine-type"
+  }
