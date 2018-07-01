@@ -15,7 +15,7 @@
             "project_id": "{{user `project_id`}}",
             "image_name": "reddit-full-{{timestamp}}",
             "image_description": "{{user `image_description`}}",
-            "image_family": "reddit-base",
+            "image_family": "reddit-full",
             "source_image_family": "{{user `source_image_family`}}",
             "disk_type": "{{user `disk_type`}}",
             "disk_size": "{{user `disk_size`}}",
