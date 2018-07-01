@@ -1,5 +1,6 @@
 [Unit]
 Description=Puma Server
+Requires=mongod.service
 
 [Service]
 SyslogIdentifier=rediit-app

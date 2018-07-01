@@ -45,7 +45,7 @@
         {
             "type": "file",    
             "source": "files/puma.service",
-            "destination": "/home/gcp-user/reddit/puma.service"
+            "destination": "/tmp/puma.service"
         },
         {
             "type": "shell",    
