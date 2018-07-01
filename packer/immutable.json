@@ -36,7 +36,7 @@
             "type": "shell",
             "script": "files/install_mongodb.sh",
             "execute_command": "sudo {{.Path}}"
-        }
+        },
         {
             "type": "shell",    
             "script": "files/deploy.sh",
