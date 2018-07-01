@@ -2,4 +2,9 @@
     "project_id": "some-project-123456",
     "source_image_family": "any-image",
     "machine_type": "any-machine-type"
+    "image_description": "base image for somth",
+    "disk_type": "pd-standard",
+    "disk_size": "199",
+    "network": "non-default",
+    "tags": "smth-server"
   }
