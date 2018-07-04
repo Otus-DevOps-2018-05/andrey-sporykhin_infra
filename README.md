@@ -1,22 +1,22 @@
-# andrey-sporykhin_infra
-andrey-sporykhin Infra repository
-# test line
-## GCP acquaintance
-#Slide 35 task 1  
-ssh -o ProxyCommand='ssh -W %h:%p gcp-user@bastion-public-address'   gcp-user@intnal-host-address  
-#Slide 35 task 2  
-Host gcp-instance-1  
- HostName 10.142.0.3  
-  User gcp-user  
-  ProxyCommand ssh gcp-bastion -W %h:%p  
-#  
-bastion_IP = 35.207.10.210  
-someinternalhost_IP = 10.142.0.3  
-#  
-testapp_IP = 35.228.250.243  
-testapp_port = 9292  
-#  
-gcloud compute firewall-rules create default-puma-server \
- --allow=tcp:9292 \
- --direction INGRESS \
- --target-tags=puma-server
+# example_infra
+andfrey-sporykhin infra repository
+
+# Table of content
+- [Homework: packer-base](#homework-packer-base)
+
+# Homework: packer-base
+
+## 1.1 Что было сделано
+- Создан шаблон Packer с предустановленными пакетами: ruby + mongodb. Имя ubuntu16.json. Шаблон параметризован, все параметры - обязательные, содержимое параметров находится в variables.json. Результат - в GCP появиляс образ reddit-base-xxx
+- ДЗ выполнено в полном объеме
+В рамках задания со *:
+- Создан дополнительный шаблон Packer согласно заданию со * (immutable.json + variables.json)
+- Добавлен скрипт для вызова комманды gcloud для создания ВМ с предустановленными зависимостями из соответсвующего образа (reddit-full-xxxx)
+
+## 1.2 Как запустить проект
+
+None
+
+## 1.3 Как проверить
+
+При запуске create-reddit-vm.sh порт 9292 по адресу 35.228.230.62 доступен, браузер отображает UI приложения
