@@ -16,4 +16,7 @@ resource "google_compute_instance" "app" {
     network = "default"
     access_config {}
  }
+ metadata {
+   ssh-keys = "appuser:${file("~/.ssh/gcp-user.pub")}"
+ }
 } 
