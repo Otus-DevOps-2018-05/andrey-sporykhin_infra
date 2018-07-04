@@ -6,18 +6,14 @@ provider "google" {
 resource "google_compute_instance" "app" {
   name = "reddit-app"
   machine_type = "g1-small"
-  zone = "europe-west1-b"
- # определение загрузочного диска
+  zone = "europe-north1-b"
   boot_disk {
     initialize_params {
     image = "reddit-base"
         }
   }
- # определение сетевого интерфейса
- network_interface {
- # сеть, к которой присоединить данный интерфейс
- network = "default"
- # использовать ephemeral IP для доступа из Интернет
- access_config {}
+ network_interface { 
+    network = "default"
+    access_config {}
  }
 } 
