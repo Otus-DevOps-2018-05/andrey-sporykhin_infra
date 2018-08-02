@@ -26,3 +26,7 @@ variable "app_count" {
   default = 1
   description = "Backend application instance count"
 }
+variable "app_name" {
+  description = "App name"
+}
+
