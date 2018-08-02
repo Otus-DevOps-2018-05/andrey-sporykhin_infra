@@ -24,7 +24,7 @@ resource "google_compute_instance_group" "appservers" {
 
   named_port {
     name = "reddit-app-http"
-    port = "${var.app_backend_port}"
+    port = "9292"
   }
 
   zone = "${var.zone}"
