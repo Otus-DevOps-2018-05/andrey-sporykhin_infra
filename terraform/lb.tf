@@ -49,7 +49,7 @@ resource "google_compute_health_check" "app" {
   timeout_sec        = 1
 
   http_health_check {
-    port         = "${var.app_backend_port}"
+    port         = "80"
     request_path = "/"
   }
 }
