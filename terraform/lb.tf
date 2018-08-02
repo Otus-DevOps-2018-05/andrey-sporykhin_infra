@@ -1,8 +1,3 @@
-provider "google" {
-  version = "1.4.0"
-  project = "${var.project}"
-  region  = "${var.region}"
-}
 resource "google_compute_global_forwarding_rule" "app" {
   name       = "reddit-app-http-forward"
   target     = "${google_compute_target_http_proxy.app.self_link}"
