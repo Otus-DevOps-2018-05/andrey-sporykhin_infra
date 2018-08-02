@@ -34,7 +34,7 @@ variable "app_name" {
     "1" = "reddit-app2"
   }
 }
-variable "app_name" {
-  description = "App name"
-}
+#variable "app_name" {
+#  description = "App name"
+#}
 
