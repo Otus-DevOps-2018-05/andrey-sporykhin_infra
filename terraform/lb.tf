@@ -35,7 +35,7 @@ resource "google_compute_backend_service" "app" {
   port_name   = "reddit-app-http"
   protocol    = "HTTP"
   timeout_sec = 10
-  count       = 2
+
 
   backend {
     group = "${google_compute_instance_group.appservers.self_link}"
@@ -55,7 +55,6 @@ resource "google_compute_health_check" "app" {
   }
 }
 
-#output "lb_app_external_ip" {
-#  value = "${google_compute_global_forwarding_rule.app.ip_address}"
-#}
-
+output "lb_app_external_ip" {
+  value = "${google_compute_global_forwarding_rule.app.ip_address}"
+}
