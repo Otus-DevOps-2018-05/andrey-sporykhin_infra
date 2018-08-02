@@ -1,3 +1,8 @@
+# Homework: terraform-1
+
+Все задания с * без  выполнены
+
+
 # example_infra
 andfrey-sporykhin infra repository
 
