@@ -26,6 +26,14 @@ variable "app_count" {
   default = 1
   description = "Backend application instance count"
 }
+
+
+variable "app_name" {
+  default = {
+    "0" = "reddit-app"
+    "1" = "reddit-app2"
+  }
+}
 variable "app_name" {
   description = "App name"
 }
