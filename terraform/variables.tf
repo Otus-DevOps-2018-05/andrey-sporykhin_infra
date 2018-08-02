@@ -23,6 +23,6 @@ variable disk_image {
   description = "Disk image"
 }
 variable "app_count" {
-  default = 2
+  default = 1
   description = "Backend application instance count"
 }
