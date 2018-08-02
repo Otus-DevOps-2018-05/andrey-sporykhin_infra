@@ -22,3 +22,6 @@ variable private_key_path {
 variable disk_image {
   description = "Disk image"
 }
+variable "app_backend_port" {
+  description = "Backend application listening port"
+}
