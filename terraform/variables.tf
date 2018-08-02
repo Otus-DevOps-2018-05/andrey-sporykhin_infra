@@ -23,9 +23,9 @@ variable disk_image {
   description = "Disk image"
 }
 variable "app_backend_port" {
-  description = "Backend application"
+  description = "Backend application_port"
 }
 variable "app_count" {
-  default = 1
+  default = 2
   description = "Backend application instance count"
 }
