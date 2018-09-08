@@ -19,6 +19,7 @@ resource "google_compute_firewall" "firewall_mongo" {
     protocol = "tcp"
     ports    = ["27017"]
   }
+
   source_tags = ["reddit-app"]
 }
 
