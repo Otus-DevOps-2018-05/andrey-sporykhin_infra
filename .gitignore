@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 # Ignore variables.json
->>>>>>> 056356f22f2b79390722518b755c3699ab661fcb
 packer/variables.json
 #Terraform
 *.tfstate
